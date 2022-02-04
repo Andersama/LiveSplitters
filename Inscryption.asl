@@ -1,7 +1,3 @@
-// Originally created by Andersama.
-// Description: Inscryption AutoSplitter by Andersama
-// Website: https://github.com/Andersama/LiveSplitters
-
 state("Inscryption") {}
 
 startup
