@@ -186,6 +186,9 @@ startup
 		{ "Act 1", "LeshyDefeated" },
 		{ "Act 1", "StartScreenNewGameUnlocked" },
 
+		{ "Act 1", "TutorialRunCompleted" },
+		{ "Act 1", "TutorialRun2Completed" },
+
 		{ "Act 2", "GBCGrimoraDefeated" },
 		{ "Act 2", "GBCLeshyDefeated" },
 		{ "Act 2", "GBCPoeDefeated" },
@@ -366,13 +369,6 @@ split
 		if (settings[evnt])
 			return true;
 	}
-}
-
-reset
-{
-	if (!vars.Unity["activeScene"].Changed) return;
-
-	return vars.Unity["activeScene"].Current == "Start";
 }
 
 isLoading
