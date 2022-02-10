@@ -212,7 +212,7 @@ startup
 	for (int i = 0; i < sett.GetLength(0); ++i)
 		settings.Add(sett[i, 1], true, sett[i, 1], sett[i, 0]);
 
-	vars.Unity = Activator.CreateInstance(Assembly.LoadFrom(@"Components\ULibrary.dll").GetType("ULibrary.Unity"));
+	vars.Unity = Assembly.Load(File.ReadAllBytes(@"Components\ULibrary.dll")).CreateInstance("ULibrary.Unity");
 }
 
 onStart
