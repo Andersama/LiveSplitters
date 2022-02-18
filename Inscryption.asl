@@ -212,7 +212,7 @@ startup
 	for (int i = 0; i < sett.GetLength(0); ++i)
 		settings.Add(sett[i, 1], true, sett[i, 1], sett[i, 0]);
 
-	vars.Unity = Assembly.Load(File.ReadAllBytes(@"Components\ULibrary.bin")).CreateInstance("ULibrary.Unity");
+	vars.Unity = Assembly.Load(File.ReadAllBytes(@"Components\UnityASL.bin")).CreateInstance("UnityASL.Unity");
 }
 
 onStart
